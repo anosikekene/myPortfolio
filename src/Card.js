@@ -14,10 +14,10 @@ const Card = ({ title, description, gitLink, link, languages }) => {
       <div className="description">
         {description}
         <div className="links">
-          <a href={gitLink} target="_blank">
+          <a href={gitLink} target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
           </a>
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
           </a>
         </div>

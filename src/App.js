@@ -8,7 +8,6 @@ import linkedin from "./linkedin.png";
 import github from "./github.png";
 import resume from "./resume.png";
 import resumeLink from "./AnosikeResumeSummer2024v2.pdf";
-import { motion } from "framer-motion";
 
 function App() {
   const cards = [
@@ -67,10 +66,18 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="Inner-header">
           <nav className="navbar">
-            <a className="navlink">Home</a>
-            <a className="navlink">About</a>
-            <a className="navlink">Projects</a>
-            <a className="navlink">Contact</a>
+            <a className="navlink" href="#home">
+              Home
+            </a>
+            <a className="navlink" href="#about">
+              About
+            </a>
+            <a className="navlink" href="#projects">
+              Projects
+            </a>
+            <a className="navlink" href="#contact">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
