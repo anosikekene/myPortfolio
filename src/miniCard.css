@@ -1,0 +1,36 @@
+.minicards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+.minicard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: black; */
+  color: #f0ebd8;
+  height: 50px;
+  width: 30%;
+  margin: 1%;
+  padding: 1%;
+  background: linear-gradient(
+    to right,
+    rgba(29, 45, 68, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  align-items: center;
+  border-bottom: 6px solid #1d2d44;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.minicard:hover {
+  border-bottom: 6px solid #f0ebd8;
+  text-decoration: none;
+}
+.minicardlogo {
+  height: 30px;
+}

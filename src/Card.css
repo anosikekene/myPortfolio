@@ -1,0 +1,91 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-between; */
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+.card {
+  width: 30%;
+  background: linear-gradient(
+    to right,
+    rgba(29, 45, 68, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+
+  margin: 1%;
+  height: 280px; /* Set a fixed height for the card */
+  position: relative; /* Ensure relative positioning for absolute children */
+  justify-content: center;
+  align-items: center;
+}
+
+.card .description {
+  position: absolute; /* Position absolutely within the card */
+  top: 0;
+  left: 0;
+  width: 90%;
+  color: #f0ebd8;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Lower z-index for description */
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.card .links a {
+  color: #f0ebd8;
+}
+.card .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  right: 0;
+}
+.card:hover .description,
+.card:hover .links {
+  opacity: 1; /* Show description on hover */
+}
+
+div.title {
+  height: 60%; /* Adjust height as needed */
+  z-index: 2; /* Higher z-index for these elements */
+  color: #f0ebd8;
+  text-align: center; /* Center align text */
+  transition: opacity 0.3s ease;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+div.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Center horizontally */
+  padding: 1%;
+  align-items: center;
+  height: 40%; /* Adjust height as needed */
+  z-index: 2; /* Higher z-index for these elements */
+  color: #f0ebd8;
+  text-align: center; /* Center align text */
+  transition: opacity 0.3s ease;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card:hover .title {
+  opacity: 0; /* Show description on hover */
+}
+.card:hover .languages {
+  opacity: 0; /* Show description on hover */
+}
