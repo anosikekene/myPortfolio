@@ -19,6 +19,30 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.Home h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #f0ebd8;
+  font-size: 80px;
+  transform: translateX(-140%);
+  animation: slideInFromLeft 1s ease forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.Home {
+  width: 60%;
+}
+h1 {
+  color: #f0ebd8;
+}
 h2 {
   font-size: 18px;
 }

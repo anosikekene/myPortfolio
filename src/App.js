@@ -89,7 +89,7 @@ function App() {
       <section className="Body">
         <Element name="home">
           <div className="Home">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Welcome to My Portfolio.</h1>
           </div>
         </Element>
         <Element name="about">
