@@ -3,6 +3,7 @@
   text-align: center;
   background: radial-gradient(rgba(0, 0, 0, 0.95), rgba(29, 45, 68, 0.9));
   min-height: 100vh;
+  cursor: default;
 }
 
 .App-logo {
@@ -15,6 +16,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .Home h1 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -23,6 +25,7 @@
   transform: translateX(-140%);
   animation: slideInFromLeft 1s ease forwards;
 }
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -33,18 +36,20 @@
     transform: translateX(0);
   }
 }
+
 .Home {
   width: 60%;
 }
+
 h1 {
   color: #f0ebd8;
 }
+
 h2 {
   font-size: 18px;
 }
+
 .App-header {
-  /* background-color: #282c34;*/
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,6 +62,7 @@ h2 {
   z-index: 1000; /* Ensure it's above other content */
   top: 10px;
 }
+
 .Inner-header {
   display: flex;
   flex-direction: row;
@@ -74,23 +80,14 @@ h2 {
   background-color: rgba(29, 45, 68, 0.5);
   backdrop-filter: blur(5px);
   border-radius: 17px;
-  width: 375px;
+  width: 450px;
+  cursor: pointer;
 }
+
 .navbar a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* .navbar a:hover {
-  background-color: green;
-  backdrop-filter: blur(5px);
-  border-radius: 17px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 15%; 
-} */
 
 .navlink {
   display: flex;
@@ -103,19 +100,35 @@ h2 {
   border-radius: 17px;
   transition: background-color 0.3s, color 0.03s ease;
 }
+
 .navlink:hover {
   background-color: rgba(116, 140, 171, 0.2);
   color: #f0ebd8;
 }
 
-/* .navbar a:hover {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  );
-} */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 250px;
+  }
+
+  section.Body {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .Home h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+}
 
 .App-link {
   color: #748cab;
@@ -143,9 +156,6 @@ h2 {
   margin: 0%;
 }
 
-/* section.Body p {
-  margin-bottom: 10%;
-} */
 div.About,
 div.Projects,
 div.Extras,

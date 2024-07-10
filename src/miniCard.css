@@ -6,6 +6,7 @@
   margin-right: 1%;
   margin-top: 1%;
 }
+
 .minicard {
   display: flex;
   flex-direction: row;
@@ -41,4 +42,24 @@
 }
 .minicardlogo {
   height: 30px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.minicard:hover .minicardlogo {
+  transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .minicards {
+    width: 100%;
+    flex-direction: column;
+  }
+  .minicard {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .minicardlogo {
+    height: 25px;
+  }
 }
