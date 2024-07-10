@@ -74,6 +74,8 @@ h2 {
 }
 
 .navbar {
+  transform: translateX(-140%);
+  animation: slideInFromLeft 1s ease forwards;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -160,6 +162,8 @@ div.About,
 div.Projects,
 div.Extras,
 div.Contact {
+  transform: translateX(-140%);
+  animation: slideInFromLeft 1s ease forwards;
   display: flex;
   flex-direction: column;
   margin-bottom: 10%;

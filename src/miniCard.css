@@ -47,6 +47,7 @@
 
 .minicard:hover .minicardlogo {
   transform: rotate(360deg);
+  height: 33px;
 }
 
 @media only screen and (max-width: 768px) {
