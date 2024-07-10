@@ -1,11 +1,7 @@
 /* https://coolors.co/palette/0d1321-1d2d44-3e5c76-748cab-f0ebd8 */
 .App {
   text-align: center;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.95),
-    rgba(29, 45, 68, 0.9)
-  );
+  background: radial-gradient(rgba(0, 0, 0, 0.95), rgba(29, 45, 68, 0.9));
   min-height: 100vh;
 }
 

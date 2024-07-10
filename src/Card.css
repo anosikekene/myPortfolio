@@ -9,25 +9,29 @@
 }
 .card {
   width: 30%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(29, 45, 68, 0.7),
     rgba(0, 0, 0, 0.7)
-  );
-
+  ); */
+  background: linear-gradient(135deg, #ff6f61, #ff9671);
   margin: 1%;
   height: 280px; /* Set a fixed height for the card */
   position: relative; /* Ensure relative positioning for absolute children */
   justify-content: center;
   align-items: center;
+  transition: background 0.3s ease;
+  border-radius: 15px;
 }
-
+.card:hover {
+  background: linear-gradient(135deg, #e65a50, #e68360);
+}
 .card .description {
   position: absolute; /* Position absolutely within the card */
   top: 0;
   left: 0;
   width: 90%;
-  color: #f0ebd8;
+  color: #0d1321;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1; /* Lower z-index for description */
@@ -37,7 +41,7 @@
   margin-right: 5%;
 }
 .card .links a {
-  color: #f0ebd8;
+  color: #0d1321;
 }
 .card .links {
   display: flex;
@@ -57,7 +61,7 @@
 div.title {
   height: 60%; /* Adjust height as needed */
   z-index: 2; /* Higher z-index for these elements */
-  color: #f0ebd8;
+  color: #0d1321;
   text-align: center; /* Center align text */
   transition: opacity 0.3s ease;
   margin-left: 5%;
@@ -76,7 +80,7 @@ div.languages {
   align-items: center;
   height: 40%; /* Adjust height as needed */
   z-index: 2; /* Higher z-index for these elements */
-  color: #f0ebd8;
+  color: #0d1321;
   text-align: center; /* Center align text */
   transition: opacity 0.3s ease;
   margin-left: 5%;

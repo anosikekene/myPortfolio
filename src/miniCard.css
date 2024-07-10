@@ -17,7 +17,7 @@
   margin: 1%;
   padding: 1%;
   background: linear-gradient(
-    to right,
+    to bottom right,
     rgba(29, 45, 68, 0.7),
     rgba(0, 0, 0, 0.7)
   );
@@ -25,10 +25,18 @@
   border-bottom: 6px solid #1d2d44;
   transition: 0.3s ease;
   text-decoration: none;
+  border-radius: 15px;
 }
-
+/* #FF5733 deep orange
+   #556B2F olive green
+ */
 .minicard:hover {
-  border-bottom: 6px solid #f0ebd8;
+  border-bottom: 6px solid #ffd700;
+  background: linear-gradient(
+    to bottom right,
+    rgba(29, 45, 68, 0.5),
+    rgba(0, 0, 0, 0.4)
+  );
   text-decoration: none;
 }
 .minicardlogo {
