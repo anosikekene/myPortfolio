@@ -9,7 +9,7 @@ import gmail from "./gmail.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import resume from "./resume.png";
-import resumeLink from "./AnosikeResumeSummer2024v2.pdf";
+import resumeLink from "./AnosikeResumeFall2024.pdf";
 
 function App() {
   const cards = [
